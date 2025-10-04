@@ -11,5 +11,6 @@ mod reg;
 //this is the placeholder for unit tests.
 #[cfg(test)]
 mod tests {
+    #[allow(unused_imports)]
     use super::*;
 }

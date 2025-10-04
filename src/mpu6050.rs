@@ -27,6 +27,7 @@ impl<T: I2c> Mpu6050<T> {
         self.i2c_interface.write(self.device_address, &buf)
     }
 
+    #[allow(dead_code)]
     fn read_byte(&mut self, reg_addr: u8) -> Result<u8, T::Error> {
         let mut read_buf = [0u8];
         self.i2c_interface
